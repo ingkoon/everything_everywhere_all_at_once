@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    web: debug
+    sql: debug
+
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  application:
+    name: everything_everywhere_all_at_once
+
+  config:
+    activate:
+      on-profile: dev
+
+youtube-data:
+  api-key: 817981678727-n1s967fr8ba0vnue41rdul3lm8tmolce.apps.googleusercontent.com
+
