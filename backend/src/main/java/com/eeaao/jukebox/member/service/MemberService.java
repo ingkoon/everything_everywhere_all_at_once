@@ -5,4 +5,5 @@ public interface MemberService {
     public void updateMember();
     public void readMember();
     public void deleteMeber();
+    public void createSocket();
 }

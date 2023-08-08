@@ -23,7 +23,7 @@ export default function JukeboxPage() {
     return (
         <div>
             <input type="text" value={inputText} onChange={handleInputChange} />
-            <button onClick={handleSearch}>Search</button>
+            <button onClick={crea}>Search</button>
             {resultUrl && <a href={resultUrl}>Result Link</a>}
         </div>
     );

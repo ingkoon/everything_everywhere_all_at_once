@@ -9,16 +9,29 @@ logging:
 spring:
   profiles:
     active: dev
+    group:
+      dev:
+        - youtube
 
 ---
 spring:
   application:
     name: everything_everywhere_all_at_once
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: root
+    password: root
+
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: create
 
   config:
     activate:
       on-profile: dev
-
-youtube-data:
-  api-key: 817981678727-n1s967fr8ba0vnue41rdul3lm8tmolce.apps.googleusercontent.com
-
