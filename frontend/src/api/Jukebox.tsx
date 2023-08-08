@@ -8,7 +8,7 @@ const jsonConfig = {
     headers: { "Content-Type": "application/json" },
 };
 
-export async function createJukeboxPage(textData: String) {
+export async function createPage(textData: String) {
     const data = await instance.post("jukebox", textData, jsonConfig)
     return data;
 }

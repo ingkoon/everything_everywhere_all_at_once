@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {createJukeboxPage} from '../api/Jukebox';
+import {createPage} from '../api/Jukebox';
 
 export default function JukeboxPage() {
     const [inputText, setInputText] = useState('');
@@ -11,9 +11,10 @@ export default function JukeboxPage() {
 
     async function createJukeboxPage(text: String){
         try{
-            const data = await createJukeboxPage(text);
+            const data = await createPage(text);
             console.log(data);
-            setResultUrl(data)
+            setResultUrl(data.data)
+            return;
         } catch (e){
             console.log(e);
         }
@@ -23,7 +24,7 @@ export default function JukeboxPage() {
     return (
         <div>
             <input type="text" value={inputText} onChange={handleInputChange} />
-            <button onClick={crea}>Search</button>
+            <button onClick={() => createJukeboxPage(inputText)}>Create</button>
             {resultUrl && <a href={resultUrl}>Result Link</a>}
         </div>
     );
