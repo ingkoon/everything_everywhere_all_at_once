@@ -1,4 +1,4 @@
-package com.eeaao.jukebox.youtube;
+package com.eeaao.jukebox.youtube.service;
 
 
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
