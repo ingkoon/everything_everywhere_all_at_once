@@ -37,3 +37,4 @@ out/
 .vscode/
 **/src/main/**/resources/application-youtube.yml
 backend/src/main/resources/application-youtube.yml
+application-youtube.yml
