@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
+// 테스트용 주석 추가
 @Entity
 @Getter
 @NoArgsConstructor
