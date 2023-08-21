@@ -1,10 +1,10 @@
 package com.eeaao.jukebox.youtube.controller;
 
-import com.eeaao.jukebox.youtube.YoutubeSearchService;
+import com.eeaao.jukebox.youtube.service.YoutubeSearchService;
 import com.google.api.services.youtube.model.SearchResult;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.coyote.Response;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
